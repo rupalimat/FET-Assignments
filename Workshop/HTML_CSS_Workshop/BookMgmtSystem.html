@@ -1,0 +1,73 @@
+<!DOCTYPE html>  
+
+<html lang="en">  
+   <head> 
+      <meta charset = "utf-8"> 
+      <title>Book Management System</title> 
+      <link rel="stylesheet" href="..\BookMgmtSystem.css">
+   </head>
+    <body>
+
+        <header>
+        <h1>Online Book Store </h1>
+        </header>
+    <section>
+       
+     <article>   
+          <div class="list1">
+            <div><button onclick="addBookFunction()">Add Book</button></div>   
+            <div><button onclick="removeBookFunction()">Remove Book</button></div>   
+            <div><button onclick="editBookFunction()">Edit Book</button></div>   
+            <div><button onclick="listofBookFunction()">List of all Books</button></div>   
+         </div>
+   </article>
+        
+   
+   
+             <h2>Books and only books</h2>
+              <h3><p id="add"></p></h3>
+              <h3><p id="remove"></p></h3>
+              <h3><p id="edit"></p></h3>
+              <h3><p id="list"></p></h3>
+   
+
+        <article>   
+          <ul class="list2">
+            <li><a href="#">New Arrivals</a><br></li>
+            <li><a href="#">Best Sellers</a><ion-nav-bar></li>
+            <li><a href="#">Award Winners</a></li>
+            <li><a href="#">TextBooks</a></li>
+            <li><a href="#">Featured Books</a></li> 
+        </ul>
+     </article>
+    </section>
+
+    <script>
+       function addBookFunction() {
+         document.getElementById("add").innerHTML = "Add Books Here!";
+        }
+</script>
+<script>
+function removeBookFunction() {
+  document.getElementById("remove").innerHTML = "Remove Books Here!";
+}
+</script>
+<script>
+function editBookFunction() {
+  document.getElementById("edit").innerHTML = "Edit Books Here!";
+}
+</script>
+<script>
+function listofBookFunction() {
+  document.getElementById("list").innerHTML = "List of all Books Here!";
+}
+</script>
+
+    </body>
+    <footer>
+        <h5>Copyright 2022 Books.com | Allrights reserved | Privacy Policy | Terms and Conditions</h5>
+    </footer>  
+
+    
+
+</html>

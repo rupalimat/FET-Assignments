@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Book Management System</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="..\bookMgmtSys.css">
+    </head>
+    <body>
+
+        <header>
+        <h1>Online Book Store </h1>
+        </header>
+
+
+     <div class="row">   
+  <div class="column" style="background-color:burlywood; line-height: 50px;">
+            <div><button onclick="addBookFunction()">Add Book</button></div>   
+            <div><button onclick="removeBookFunction()">Remove Book</button></div>   
+            <div><button onclick="editBookFunction()">Edit Book</button></div>   
+            <div><button onclick="listofBookFunction()">List of all Books</button></div>   
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Books and only books</h2>
+              <h3><p id="add"></p></h3>
+              <p id="add1"></p>
+              <h3><p id="remove"></p></h3>
+              <h3><p id="edit"></p></h3>
+              <h3><p id="list"></p></h3>
+  </div>
+  <div class="column" style="background-color:burlywood; line-height: 50px;">
+            <li><a href="#">New Arrivals</a><br></li>
+            <li><a href="#">Best Sellers</a><ion-nav-bar></li>
+            <li><a href="#">Award Winners</a></li>
+            <li><a href="#">TextBooks</a></li>
+            <li><a href="#">Featured Books</a></li> 
+  </div>
+     </div>
+
+    <script src="addBook.js"></script>
+    <script>
+function removeBookFunction() {
+  document.getElementById("remove").innerHTML = "Remove Books Here!";
+}
+</script>
+<script>
+function editBookFunction() {
+  document.getElementById("edit").innerHTML = "Edit Books Here!";
+}
+</script>
+<script>
+function listofBookFunction() {
+  document.getElementById("list").innerHTML = "List of all Books Here!";
+}
+</script>
+    </body>
+
+    <footer>
+        <h5>Copyright 2022 Books.com | Allrights reserved | Privacy Policy | Terms and Conditions</h5>
+    </footer>
+</html>

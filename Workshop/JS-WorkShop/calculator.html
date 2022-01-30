@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="..\calculator.css">
+</head>
+
+<body>
+
+    <div id="normalCalc">
+        <h3>Calculator</h3>
+
+        <form name="calc">
+
+            <table class="calculator" height="300px" width="200px" border="1px solid">
+                <tr>
+                    <td colspan="4"><input id="display" name="display" value="0" size="28" maxlength="25">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btnTop" name="btnTop" value="<-" onclick="backspace(this.form.display)"></td>
+                    <td><input type="button" class="btnTop" name="btnTop" value="STD/SCI" onclick="shiftToScientific()"></td>
+                    <td><input type="button" class="btnTop" name="btnTop" value="C" onclick="this.form.display.value=0"></td>
+                    <td><input type="button" class="btnTop" name="btnTop" value="%" onclick=""></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btnTop" name="btnTop" value="7" onclick="addChar(this.form.display,'7')"></td>
+                    <td><input type="button" class="btnTop" name="btnTop" value="8" onclick="addChar(this.form.display, '8')"></td>
+                    <td><input type="button" class="btnTop" name="btnTop" value="9" onclick="addChar(this.form.display, '9')"></td>
+                    <td><input type="button" class="btnTop" name="btnTop" value="*" onclick="addChar(this.form.display, '*')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btnTop" name="btnTop" value="4" onclick="addChar(this.form.display, '4')"></td>
+                    <td><input type="button" class="btnTop" name="btnTop" value="5" onclick="addChar(this.form.display, '5')"></td>
+                    <td><input type="button" class="btnTop" name="btnTop" value="6" onclick="addChar(this.form.display, '6')"></td>
+                    <td><input type="button" class="btnTop" name="btnTop" value="-" onclick="addChar(this.form.display, '-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btnTop" name="btnTop" value="1" onclick="addChar(this.form.display, '1')"></td>
+                    <td><input type="button" class="btnTop" name="btnTop" value="2" onclick="addChar(this.form.display, '2')"></td>
+                    <td><input type="button" class="btnTop" name="btnTop" value="3" onclick="addChar(this.form.display, '3')"></td>
+                    <td><input type="button" class="btnTop" name="btnTop" value="+" onclick="addChar(this.form.display, '+')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="btnTop" name="btnTop" value="/" onclick="addChar(this.form.display, '/')"></td>
+                    <td><input type="button" class="btnTop" name="btnTop" value="0" onclick="addChar(this.form.display, '0')"></td>
+                    <td><input type="button" class="btnTop" name="btnTop" value="." onclick="addChar(this.form.display, '.')"></td>
+                    <td><input type="button" class="btnTop" name="btnTop" value="=" onclick="if(checkNum(this.form.display.value)) { compute(this.form) }"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
+
+
+<div class="calcScientific" id="scientificCalc" style="display: none">
+    <h3> Scientific Calculator</h3>
+
+    <form name="calc-scientific">
+
+        <table class="calculator" height="300px" width="200px" border="1px solid">
+            <tr>
+                <td colspan="4"><input id="display" name="display" value="0" size="28" maxlength="25">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btnTop" name="btnTop" value="<-" onclick="backspace(this.form.display)"></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="STD/SCI" onclick="shiftToScientific()"></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="C" onclick="this.form.display.value=0"></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="Cube" onclick=""></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btnTop" name="btnTop" value="7" onclick="addChar(this.form.display,'7')"></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="8" onclick="addChar(this.form.display, '8')"></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="9" onclick="addChar(this.form.display, '9')"></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="*" onclick="addChar(this.form.display, '*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btnTop" name="btnTop" value="4" onclick="addChar(this.form.display, '4')"></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="5" onclick="addChar(this.form.display, '5')"></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="6" onclick="addChar(this.form.display, '6')"></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="-" onclick="addChar(this.form.display, '-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btnTop" name="btnTop" value="1" onclick="addChar(this.form.display, '1')"></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="2" onclick="addChar(this.form.display, '2')"></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="3" onclick="addChar(this.form.display, '3')"></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="+" onclick="addChar(this.form.display, '+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="btnTop" name="btnTop" value="Square" onclick=""></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="0" onclick="addChar(this.form.display, '0')"></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="Sq.root" onclick="addChar(this.form.display, '.')"></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="=" onclick="if(checkNum(this.form.display.value)) { compute(this.form) }"></td>
+            </tr>
+        </table>
+    </form>
+</div>

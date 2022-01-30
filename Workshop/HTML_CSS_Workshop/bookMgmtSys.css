@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+header{
+    background-image: url("library.jpeg");
+    height:200px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  height:500px;
+  padding: 10px;
+ 
+}
+h1{
+  text-align: left; 
+   color: white;
+}
+footer{
+     background-color: black;
+     height: 100px;
+}
+    @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    h5{
+    color: white;
+    text-align: center;
+    padding-top: 35px;
+}
