@@ -1,0 +1,17 @@
+table{
+    width:50%;
+     border:1px solid black;
+}
+    tr, td{
+    border:1px solid black;
+}
+td{
+    width:20%;
+}
+.textarea {
+  display: block;
+  width: 90%;
+  overflow: hidden;
+  resize: both;
+  
+}

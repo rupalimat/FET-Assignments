@@ -1,0 +1,92 @@
+.theme-1 * {
+  color: #fff;
+}
+
+.theme-1 .theme-1 .container {
+  background-color: #f7eb80;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+}
+
+.theme-1 .theme-1 .container .left {
+  font-size: 30px;
+  color: darkblue;
+  background-color: #497265;
+  height: 100%;
+  width: 65%;
+}
+
+.theme-1 .theme-1 .container .right {
+  font-size: 30px;
+  color: darkblue;
+  background-color: #82aa91;
+  height: 100%;
+  position: relative;
+  width: 33%;
+}
+
+.theme-1 .theme-1 .container .right .button {
+  color: white;
+  background-color: #bc6a49;
+  bottom: 10px;
+  font-size: 20px;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+}
+
+.theme-2 * {
+  color: #fff;
+}
+
+.theme-2 .theme-1 .container {
+  background-color: #e4ada7;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+}
+
+.theme-2 .theme-1 .container .left {
+  font-size: 30px;
+  color: darkblue;
+  background-color: #d88880;
+  height: 100%;
+  width: 65%;
+}
+
+.theme-2 .theme-1 .container .right {
+  font-size: 30px;
+  color: darkblue;
+  background-color: #cc6359;
+  height: 100%;
+  position: relative;
+  width: 33%;
+}
+
+.theme-2 .theme-1 .container .right .button {
+  color: white;
+  background-color: #481b16;
+  bottom: 10px;
+  font-size: 20px;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+}
+/*# sourceMappingURL=Assignment.css.map */

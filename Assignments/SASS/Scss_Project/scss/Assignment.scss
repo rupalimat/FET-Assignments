@@ -1,0 +1,53 @@
+@mixin themable($theme-name, $container, $left, $right, $innertext, $button){
+  .#{$theme-name}{
+*{
+    color:$innertext;
+    
+    }
+
+.theme-1{
+      
+
+    .container{
+                    background-color: $container;
+                    border: 1px solid black;
+                    display: flex;
+                    height: 500px;
+                    justify-content: space-between;
+                    margin: 0 auto;
+                    padding: 10px;
+                    width: 50%;
+          
+        .left{
+                 font-size: 30px;
+                 color:darkblue;
+                 background-color:$left;
+                 height: 100%;
+                 width: 65%;
+              }
+        .right{
+                  font-size: 30px;
+                  color:darkblue;
+                  background-color:$right;
+                  height: 100%;
+                  position: relative;
+                  width: 33%;
+              
+             
+            .button{
+                   color:white;
+                   background-color: $button;
+                   bottom: 10px;
+                   font-size: 20px;
+                   padding: 10px;
+                   position: absolute;
+                   right: 10px;
+                  
+            }
+        }
+    }
+}
+}
+}
+@include themable(theme-1, #f7eb80, #497265, #82aa91, #fff, #bc6a49);
+@include themable(theme-2, #e4ada7, #d88880, #cc6359, #fff, #481b16);

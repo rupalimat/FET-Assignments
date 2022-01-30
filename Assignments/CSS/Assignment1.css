@@ -1,0 +1,16 @@
+table{
+    width:30%;
+     border:1px solid black;
+}
+
+th{
+    background-color:grey;
+border:1px solid black;}
+
+tr, td{
+    border:1px solid black;
+}
+
+tr:nth-child(even){
+    background-color: yellowgreen;
+}
