@@ -1,0 +1,59 @@
+.navbar {
+  background-color: lightgray;
+  height: 40px;
+}
+
+.header {
+  background-color: skyblue;
+  border: 1px solid;
+  text-align: center;
+  height: 100px;
+}
+
+.footer {
+  background-color: skyblue;
+  border: 1px solid;
+  text-align: center;
+  height: 60px;
+}
+
+.container {
+  background-color: lightcyan;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  grid-auto-rows: 300px;
+  border: 1px solid;
+}
+
+.item1 {
+  border: 1px solid;
+}
+
+.item2 {
+  border: 1px solid;
+}
+
+.item3 {
+  border: 1px solid;
+}
+
+.item4 {
+  border: 1px solid;
+}
+
+img {
+  width: 200px;
+  height: 100px;
+}
+
+@media all and (max-width: 800px) {
+  .container {
+    background-color: papayawhip;
+    display: block;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=layout.css.map */
